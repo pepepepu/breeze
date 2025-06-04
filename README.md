@@ -67,4 +67,4 @@ Antes de começar, você precisará ter o seguinte instalado em sua máquina:
 * **[SEU NOME COMPLETO AQUI]**
     * GitHub: [@pepepepu](https://github.com/pepepepu)
     * LinkedIn: [Pedro Oliveira](https://www.linkedin.com/in/pp-oliveira)
-    * Email: seu.email@example.com
+    * Email: spedrobreno.2012@hotmail.com
