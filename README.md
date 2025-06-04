@@ -64,7 +64,7 @@ Antes de começar, você precisará ter o seguinte instalado em sua máquina:
     * Pressionar `w` no terminal para abrir no navegador (para algumas funcionalidades).
 
 ## ✍️ Autor
-* **[SEU NOME COMPLETO AQUI]**
+* **[PEDRO PAULO OLIVEIRA BARROS SOUZA]**
     * GitHub: [@pepepepu](https://github.com/pepepepu)
     * LinkedIn: [Pedro Oliveira](https://www.linkedin.com/in/pp-oliveira)
     * Email: spedrobreno.2012@hotmail.com
