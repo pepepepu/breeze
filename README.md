@@ -1,6 +1,8 @@
 # Breeze - Gestor Inteligente de Ar Condicionado
 
 ## 📜 Breve Descrição
+Breeze é um aplicativo mobile desenvolvido para o gerenciamento e monitoramento de aparelhos de ar condicionado em um determinado local. O principal objetivo é facilitar a identificação de unidades com mau funcionamento ou que necessitam de manutenção, além de fornecer uma visão clara do status operacional (ligado, desligado, com defeito) de cada aparelho através de uma interface intuitiva com mapa interativo. O Breeze também permite simular controles básicos, auxiliando na gestão e otimização do uso desses equipamentos.
+
 ## 🚀 Status do Projeto
 **Status:** 🚧 Em Desenvolvimento
 
@@ -15,22 +17,26 @@ Este projeto foi desenvolvido como parte do meu portfólio pessoal com o objetiv
 * [ ] **Detalhes e Controle do AC:** Acessar detalhes de um AC (nome, cômodo, temperatura simulada) e realizar ações básicas (ligar/desligar, ajustar temperatura simulada).
 * [ ] **Gerenciamento de ACs (CRUD):** Adicionar, visualizar, editar e remover ACs (com informações de localização para o mapa).
 * [ ] **Reportar Defeito:** Marcar um AC como "com defeito" e ver essa indicação visualmente no mapa e na lista de dispositivos.
-* ## 🛠️ Tecnologias Utilizadas (Tech Stack)
+
+## 🛠️ Tecnologias Utilizadas (Tech Stack)
 * **React Native:** Framework principal para desenvolvimento mobile multiplataforma.
 * **TypeScript:** Superset do JavaScript para tipagem estática, melhorando a manutenibilidade e a robustez do código.
-* **React Navigation:** (Ou a biblioteca de navegação que você escolher) Para gerenciamento de navegação entre telas.
+* **React Navigation:** Para gerenciamento de navegação entre telas.
+* **Redux (com Redux Toolkit recomendado):** Para gerenciamento de estado global da aplicação.
 * **`react-native-maps`:** Para a funcionalidade de visualização no mapa.
-* * **ESLint & Prettier:** Para padronização e qualidade do código.
-* ## 🚀 Como Executar o Projeto (Setup)
-### Pré-requisitos
-Antes de começar, você precisará ter o ambiente de desenvolvimento React Native configurado em sua máquina. Siga as instruções na [documentação oficial do React Native](https://reactnative.dev/docs/environment-setup) para o seu sistema operacional (Windows, macOS, Linux) e para o seu alvo de desenvolvimento (Android, iOS).
+* **ESLint & Prettier:** Para padronização e qualidade do código.
 
-Você precisará de:
-* Node.js (versão LTS recomendada)
-* npm ou Yarn
-* Watchman (para macOS)
-* JDK (Java Development Kit)
-* Android Studio (com SDK do Android e emulador configurado) / Xcode (para desenvolvimento iOS em macOS)
+## 🚀 Como Executar o Projeto (Setup)
+Este projeto utiliza o Expo, o que facilita a configuração e execução em diferentes plataformas.
+
+### Pré-requisitos
+Antes de começar, você precisará ter o seguinte instalado em sua máquina:
+* **Node.js** (versão LTS recomendada - você pode verificar no [site oficial do Node.js](https://nodejs.org/))
+* **npm** (geralmente vem com o Node.js) ou **Yarn** (gerenciador de pacotes alternativo)
+* **Expo CLI:** Instale globalmente executando `npm install -g expo-cli` ou `yarn global add expo-cli`.
+* **Aplicativo Expo Go** (opcional, mas recomendado para testes em dispositivos móveis):
+    * Para Android: [Expo Go na Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
+    * Para iOS: [Expo Go na Apple App Store](https://apps.apple.com/us/app/expo-go/id982107779)
 
 ### Passos para Instalação e Execução
 1.  **Clone o repositório:**
@@ -45,26 +51,20 @@ Você precisará de:
     yarn install
     ```
 3.  **Configurações Específicas (se houver):**
-    4.  **Execute o aplicativo:**
-    * **Para Android:**
-        ```bash
-        npm run android
-        # ou
-        yarn android
-        ```
-    * **Para iOS (em ambiente macOS):**
-        ```bash
-        cd ios && pod install && cd .. # Execute este comando se for a primeira vez ou se adicionar/atualizar libs nativas
-        npm run ios
-        # ou
-        yarn ios
-        ```
+    4.  **Inicie o servidor de desenvolvimento Expo:**
+    ```bash
+    npx expo start
+    # ou
+    yarn expo start
+    ```
+    Isso abrirá o Metro Bundler no seu navegador. A partir daí, você pode:
+    * **Escanear o QR Code** com o aplicativo Expo Go no seu celular Android (ou iOS) para rodar o app no dispositivo.
+    * Pressionar `a` no terminal para tentar abrir em um emulador Android (se configurado).
+    * Pressionar `i` no terminal para tentar abrir em um simulador iOS (se estiver em um macOS e com Xcode configurado).
+    * Pressionar `w` no terminal para abrir no navegador (para algumas funcionalidades).
 
-## 📁 Estrutura de Pastas (Opcional, mas recomendado)
-## 🧠 Decisões de Design e Arquitetura (Opcional)
-## 🔮 Próximos Passos / Features Futuras (Opcional)
 ## ✍️ Autor
 * **[SEU NOME COMPLETO AQUI]**
-    * GitHub: [@SEU_USUARIO_GITHUB](https://github.com/SEU_USUARIO_GITHUB)
-    * LinkedIn: [linkedin.com/in/SEU_PERFIL_LINKEDIN](https://linkedin.com/in/SEU_PERFIL_LINKEDIN)
+    * GitHub: [@pepepepu](https://github.com/pepepepu)
+    * LinkedIn: [Pedro Oliveira](https://www.linkedin.com/in/pp-oliveira)
     * Email: seu.email@example.com
